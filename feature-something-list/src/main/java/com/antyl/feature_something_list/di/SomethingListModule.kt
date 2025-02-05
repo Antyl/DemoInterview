@@ -1,8 +1,9 @@
 package com.antyl.feature_something_list.di
 
-import com.antyl.domain.usecase.GetSomethingDomainUseCase
+import com.antyl.domain.usecase.GetSomethingDomainUC
 import com.antyl.feature_something_list.data.ViewDataMapper
 import com.antyl.feature_something_list.domain.GetSomethingUseCase
+import com.antyl.feature_something_list.domain.GetSomethingUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -17,9 +18,9 @@ internal object SomethingListModule {
 
     @Provides
     fun provideGetSomethingUseCase(
-        getSomethingDomainUseCase: GetSomethingDomainUseCase,
+        getSomethingDomainUC: GetSomethingDomainUC,
         viewDataMapper: ViewDataMapper
     ): GetSomethingUseCase {
-        return GetSomethingUseCase(getSomethingDomainUseCase, viewDataMapper)
+        return GetSomethingUseCaseImpl(getSomethingDomainUC, viewDataMapper)
     }
 }

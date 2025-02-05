@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-internal class SomethingListViewModel @Inject constructor(
+class SomethingListViewModel @Inject constructor(
     private val getSomethingUseCase: GetSomethingUseCase
 ): ViewModel() {
 

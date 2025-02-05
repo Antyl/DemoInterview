@@ -21,9 +21,10 @@ import com.antyl.ui.component.SomethingItem
 
 @Composable
 fun SomethingListScreen(
+    viewModel: SomethingListViewModel,
     onDetailsClick: (Long) -> Unit
 ) {
-    val viewModel: SomethingListViewModel = hiltViewModel<SomethingListViewModel>()
+
     val state by viewModel.uiState.collectAsState()
 
     Box(
@@ -42,7 +43,7 @@ fun SomethingListScreen(
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                     contentPadding = PaddingValues(vertical = 16.dp)
                 ) {
-                    items(data) {
+                    items(items = data, key = { it.id }) {
                         SomethingItem(it.name, it.currentParam) {
                             onDetailsClick.invoke(it.id)
                         }
