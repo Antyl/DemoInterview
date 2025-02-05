@@ -36,5 +36,5 @@ dependencies {
 
     testImplementation(libs.junit)
 
-//    implementation(project(":feature-something-list"))
+    implementation(project(":feature-something-list"))
 }
