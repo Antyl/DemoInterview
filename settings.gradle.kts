@@ -21,4 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "Demo Interview"
 include(":app")
- 
+include(":core")
+include(":data")
+include(":domain")
+include(":ui")
+include(":navigation")
+//include(":feature-something-list")

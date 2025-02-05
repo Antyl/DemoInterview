@@ -1,4 +1,4 @@
-package com.antyl.demointerview.ui.theme
+package com.antyl.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.antyl.demointerview.ui.theme
+package com.antyl.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

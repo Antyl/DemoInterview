@@ -1,4 +1,4 @@
-package com.antyl.demointerview.ui.theme
+package com.antyl.ui.theme
 
 import android.app.Activity
 import android.os.Build
